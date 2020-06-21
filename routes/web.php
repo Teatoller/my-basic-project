@@ -13,9 +13,9 @@ use Illuminate\Support\Facades\Route;
 |
  */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+//     return view('welcome');
+// });
 
 // Route::get('/contact', function () {
 //     return view('contact');
@@ -31,15 +31,18 @@ Route::view('/contact', 'contact');
 
 Route::view('/about', 'about');
 
-Route::get('/customers', function () {
+// Route::get('/customers', function () {
 
-    $customers = [
-        'John Doe',
-        'Jane Doe',
-        'Bob the builder',
-    ];
+//     $customers = [
+//         'John Doe',
+//         'Jane Doe',
+//         'Bob the builder',
+//     ];
 
-    return view('internals.customer', [
-        'customers'=>$customers,
-    ]);
-});
+//     return view('internals.customer', [
+//         'customers'=>$customers,
+//     ]);
+// });
+
+Route::get('/customers', 'CustomersController@list');
+Route::post('/customers', 'CustomersController@store');
