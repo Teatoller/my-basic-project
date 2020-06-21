@@ -9,21 +9,10 @@
     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 </head>
 <body>
-<ul class="nav">
-  <li class="nav-item">
-    <a class="nav-link active" href="/">Home</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" href="/about">About Us</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" href="/contact">Contact Us</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" href="/customers">Customer</a>
-  </li>
-</ul>
+
     <div class="container">
+    
+@include('nav')
     @yield('content')
     </div>
 
