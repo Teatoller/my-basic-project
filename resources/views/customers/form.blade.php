@@ -1,12 +1,13 @@
-<label for="name">Name:</label>
 <div class="form-group">
+    <label for="name">Name:</label>
     <input type="text" name="name" value="{{ old('name') ?? $customer->name}}" class="form-control">
     <div>
         {{$errors->first('name')}}
     </div>
 
-    <label for="email">Email:</label>
+
     <div class="form-group">
+        <label for="email">Email:</label>
         <input type="text" name="email" value="{{ old('email')?? $customer->email}}" class="form-control">
     </div>
     <div>
