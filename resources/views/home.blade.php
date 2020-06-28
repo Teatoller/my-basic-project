@@ -1,8 +1,8 @@
 @extends('layout')
 
-@section('title')
+{{-- @section('title')
 Home
-@endsection
+@endsection --}}
 
 @section('content')
 <h1>Home Page</h1>
